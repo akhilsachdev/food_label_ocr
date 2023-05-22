@@ -11,6 +11,9 @@
 		20EDEFFA2A19A315009EF7AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDEFF92A19A315009EF7AF /* ContentView.swift */; };
 		20EDEFFC2A19A317009EF7AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EDEFFB2A19A317009EF7AF /* Assets.xcassets */; };
 		20EDF0002A19A317009EF7AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EDEFFF2A19A317009EF7AF /* Preview Assets.xcassets */; };
+		20EDF0072A19AC03009EF7AF /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDF0062A19AC03009EF7AF /* ScanData.swift */; };
+		20EDF00B2A19AE24009EF7AF /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDF00A2A19AE24009EF7AF /* ScannerView.swift */; };
+		20EDF00F2A19B0E2009EF7AF /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDF00E2A19B0E2009EF7AF /* TextRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		20EDEFFB2A19A317009EF7AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20EDEFFD2A19A317009EF7AF /* TestOCRApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestOCRApp.entitlements; sourceTree = "<group>"; };
 		20EDEFFF2A19A317009EF7AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		20EDF0062A19AC03009EF7AF /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		20EDF00A2A19AE24009EF7AF /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		20EDF00E2A19B0E2009EF7AF /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 			children = (
 				20EDEFF72A19A315009EF7AF /* TestOCRAppApp.swift */,
 				20EDEFF92A19A315009EF7AF /* ContentView.swift */,
+				20EDF0062A19AC03009EF7AF /* ScanData.swift */,
 				20EDEFFB2A19A317009EF7AF /* Assets.xcassets */,
 				20EDEFFD2A19A317009EF7AF /* TestOCRApp.entitlements */,
 				20EDEFFE2A19A317009EF7AF /* Preview Content */,
+				20EDF00A2A19AE24009EF7AF /* ScannerView.swift */,
+				20EDF00E2A19B0E2009EF7AF /* TextRecognizer.swift */,
 			);
 			path = TestOCRApp;
 			sourceTree = "<group>";
@@ -140,7 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				20EDEFFA2A19A315009EF7AF /* ContentView.swift in Sources */,
+				20EDF00B2A19AE24009EF7AF /* ScannerView.swift in Sources */,
+				20EDF00F2A19B0E2009EF7AF /* TextRecognizer.swift in Sources */,
 				20EDEFF82A19A315009EF7AF /* TestOCRAppApp.swift in Sources */,
+				20EDF0072A19AC03009EF7AF /* ScanData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +281,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permission to scan files";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +320,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permission to scan files";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
